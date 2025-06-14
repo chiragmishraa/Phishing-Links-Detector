@@ -138,7 +138,7 @@
 <canvas id="matrix"></canvas>
 
 <div class="container">
-  <h2>☠️ Phishing Link Detector</h2>
+  <h2>⚡Phishing Link Detector</h2>
   <input type="text" id="urlInput" placeholder="e.g. scam.com, fakebank.ru" />
   <button onclick="checkURL()">Check URL</button>
   <div class="result" id="resultBox"></div>
@@ -195,7 +195,7 @@
     .then(res => res.json())
     .then(data => {
       if (data.is_phishing) {
-        resultBox.innerHTML = '⚠️ <span class="warning">Warning! This is a phishing link.</span>';
+        resultBox.innerHTML = '⚠️ <span class="warning">Warning! This might be a phishing link.</span>';
       } else {
         resultBox.innerHTML = '✅ <span class="safe">This URL seems safe.</span>';
       }
